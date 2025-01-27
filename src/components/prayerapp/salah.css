@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Oswald:wght@200..700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Amiri Quran", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+html{
+    direction: rtl;
+}
+
+body {
+    margin: 0;
+    background-image: url('./mosque.jpg');
+    background-size: cover;
+    height: 100px;
+}
+.container{
+    width: 650px;
+    background-color: #13131271;
+    padding: 30px 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #d7d7d74e;
+    border-radius: 10px;
+    margin-left: 25%;
+}
+
+.justify{
+    padding: 0 40%;
+    font-size: 22px;
+    outline: none;
+    border-radius: 10px;
+    margin-left: px;
+    text-align: center;
+}
+.tarikh{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.milady{
+    font-size: 22px;
+    color: white;
+    gap: 5px;
+}
+.hijry{
+    font-size: 22px;
+    color: white;
+    gap: 5px;
+}
+.countdown{
+    font-size: 22px;
+    color: white;
+    gap: 5px;
+    text-align: center;
+}
+.miqat{
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    color: white;
+    justify-content: space-between;
+}
+.alazkar{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}

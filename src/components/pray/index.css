@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: outfit;
+}
+html{
+  direction: rtl;
+}
+section{
+  background-image: url(pexels-meruyert-gonullu-7317551.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+section .container{
+  width: 650px;
+  background-color: #332a224e;
+  padding: 30px 25px;
+  backdrop-filter: blur(10px);
+  border: 1px solid #d7d7d74e;
+  border-radius: 10px;
+  margin-right: 15%;
+}
+section .top-section{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom:40px ;
+  border-bottom: 1px solid #c0583e75;
+  margin-bottom: 40px;
+}
+section .top-section select{
+  width: 250px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #c0583e75;
+  font-size: 22px;
+  text-align: center;
+  padding: 2px 10px;
+  color: white;
+  margin-top:10px ;
+}
+section .top-section h3{
+  font-size: 30px;
+  color: white;
+}
+section .top-section h4{
+  font-size: 30px;
+  color: white;
+}
+section .top-section .date{
+    width: 250px;
+}
+section .prayer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  background: #c0583e75;
+  margin-bottom: 25px;
+  color: white;
+  font-size: 26px;
+  border-radius: 5px;
+  border: 1px solid;
+}
