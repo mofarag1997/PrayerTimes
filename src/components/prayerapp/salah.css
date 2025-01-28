@@ -72,56 +72,43 @@ body {
 }
 @media screen and (max-width: 768px) {
     .container {
-        width: 90%; 
+        width: 90%;
         margin-left: 5%;
-        padding: 15px; 
+        padding: 15px;
     }
 
     .justify {
         padding: 0 20%;
         font-size: 18px; 
-        margin-left: 0;
+        text-align: center; 
     }
 
     .tarikh {
-        flex-direction: column; 
-        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
     }
 
     .milady, .hijry, .countdown {
         font-size: 18px;
-        gap: 3px;
+        gap: 10px;
     }
 
     .miqat {
-        flex-direction: column;
-        gap: 5px;
-        font-size: 20px;
+        display: flex;
+        gap: 15px;
+        font-size: 22px;
+        justify-content: space-between;
     }
 
     .alazkar {
-        font-size: 22px; 
+        font-size: 22px;
     }
 }
+
 @media screen and (max-width: 480px) {
     .container {
         width: 95%;
         padding: 10px;
     }
-
-    .justify {
-        font-size: 16px; 
-    }
-
-    .milady, .hijry, .countdown {
-        font-size: 16px; 
-    }
-
-    .miqat {
-        font-size: 18px; 
-    }
-
-    .alazkar {
-        font-size: 20px; 
-    }
-}
