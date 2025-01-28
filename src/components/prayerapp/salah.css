@@ -77,36 +77,6 @@ body {
         padding: 15px;
     }
 
-    .justify {
-        padding: 0 20%;
-        font-size: 18px; 
-        text-align: center; 
-    }
-
-    .tarikh {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .milady, .hijry, .countdown {
-        font-size: 18px;
-        gap: 10px;
-    }
-
-    .miqat {
-        display: flex;
-        gap: 15px;
-        font-size: 22px;
-        justify-content: space-between;
-    }
-
-    .alazkar {
-        font-size: 22px;
-    }
-}
-
 @media screen and (max-width: 480px) {
     .container {
         width: 95%;
