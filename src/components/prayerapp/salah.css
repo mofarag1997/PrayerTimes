@@ -17,8 +17,6 @@ body {
     background-image: url('./mosque.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
 }
 .container {
     width: 650px;
@@ -80,7 +78,7 @@ select {
         font-size: 14px;
     }
     .container {
-        width: 85%;
+        width: 95%;
         padding: 20px 15px;
     }
     .justify {
