@@ -7,68 +7,71 @@
     font-weight: 500;
     font-style: normal;
 }
-html{
+html {
     direction: rtl;
+    font-size: 16px; 
+    height:100%;
 }
 
 body {
     margin: 0;
     background-image: url('./mosque.jpg');
     background-size: cover;
-    height: 100%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
-.container{
+.container {
     width: 650px;
     background-color: #13131271;
     padding: 30px 25px;
     backdrop-filter: blur(10px);
     border: 1px solid #d7d7d74e;
     border-radius: 10px;
-    margin-left: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
 
-.justify{
+.justify {
     padding: 0 40%;
-    font-size: 20px;
+    font-size: 22px;
     outline: none;
     border-radius: 10px;
     text-align: center;
 }
-.tarikh{
+.tarikh {
     display: flex;
-        flex-direction: row; 
-        justify-content: space-between;
-        gap: 20px; 
-}
-.milady{
-    font-size: 22px;
-    color: white;
-    gap: 10px;
-    
-}
-.hijry{
-    font-size: 22px;
-    color: white;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 10px;
 }
-.countdown{
+.milady, .hijry, .countdown {
     font-size: 22px;
     color: white;
-    gap: 10px;
-    text-align: center;
+    gap: 5px;
+    width: 100%;
+    text-align: center; 
 }
-.miqat{
+.miqat {
     display: flex;
     gap: 10px;
     font-size: 25px;
     color: white;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.alazkar{
+.alazkar {
     color: white;
     text-align: center;
     font-size: 25px;
+}
+
+select {
+    font-size: 18px; 
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
