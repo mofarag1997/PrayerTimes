@@ -9,7 +9,7 @@
 }
 html {
     direction: rtl;
-    font-size: 16px; /* الحجم الافتراضي للخطوط */
+    font-size: 16px; 
 }
 
 body {
@@ -51,7 +51,7 @@ body {
     color: white;
     gap: 5px;
     width: 100%;
-    text-align: center; /* يجعلهم في منتصف العنصر */
+    text-align: center; 
 }
 .miqat {
     display: flex;
@@ -68,7 +68,7 @@ body {
 }
 
 select {
-    font-size: 18px; /* تكبير حجم الخط في السيليكت */
+    font-size: 18px; 
     padding: 8px;
     width: 100%;
     border-radius: 5px;
@@ -95,10 +95,13 @@ select {
     .tarikh {
         flex-direction: column;
         text-align: center;
-        gap: 15px; /* زيادة الفراغ بين عناصر التاريخ */
+        gap: 15px; 
     }
     .milady, .hijry, .countdown {
-        font-size: 18px; /* تقليل حجم الخط */
+        font-size: 12px; 
+    }
+    .alazkar{
+    font-size:15px;
     }
 }
 
@@ -125,6 +128,6 @@ select {
         gap: 12px;
     }
     .milady, .hijry, .countdown {
-        font-size: 14px; /* تقليل الحجم أكتر */
+        font-size: 14px; 
     }
 }
