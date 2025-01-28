@@ -34,7 +34,6 @@ body {
     font-size: 22px;
     outline: none;
     border-radius: 10px;
-    margin-left: px;
     text-align: center;
 }
 .tarikh{
@@ -73,12 +72,19 @@ body {
 @media screen and (max-width: 768px) {
     .container {
         width: 90%;
-        margin-left: 5%;
-        padding: 15px;
     }
+    .miqat{
+    gap: 5px;
+    font-size: 18px;
+    justify-content: space-between;
+}
 
 @media screen and (max-width: 480px) {
     .container {
         width: 95%;
-        padding: 10px;
     }
+    .miqat{
+    gap: 2px;
+    font-size: 12px;
+    justify-content: space-between;
+}
