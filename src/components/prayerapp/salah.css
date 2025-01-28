@@ -7,8 +7,9 @@
     font-weight: 500;
     font-style: normal;
 }
-html{
+html {
     direction: rtl;
+    font-size: 16px; /* ضبط الحجم الافتراضي لسهولة القراءة على الموبايل */
 }
 
 body {
@@ -17,9 +18,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    width:100%;
+    width: 100%;
 }
-.container{
+.container {
     width: 650px;
     background-color: #13131271;
     padding: 30px 25px;
@@ -27,66 +28,79 @@ body {
     border: 1px solid #d7d7d74e;
     border-radius: 10px;
     margin-left: 25%;
+    max-width: 100%; /* يضمن أن العرض لا يتجاوز الحدود */
 }
 
-.justify{
+.justify {
     padding: 0 40%;
     font-size: 22px;
     outline: none;
     border-radius: 10px;
     text-align: center;
 }
-.tarikh{
+.tarikh {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.milady{
+.milady, .hijry, .countdown {
     font-size: 22px;
     color: white;
     gap: 5px;
 }
-.hijry{
-    font-size: 22px;
-    color: white;
-    gap: 5px;
-}
-.countdown{
-    font-size: 22px;
-    color: white;
-    gap: 5px;
-    text-align: center;
-}
-.miqat{
+.miqat {
     display: flex;
     gap: 10px;
     font-size: 25px;
     color: white;
     justify-content: space-between;
 }
-.alazkar{
+.alazkar {
     color: white;
     text-align: center;
     font-size: 25px;
 }
+
 @media screen and (max-width: 768px) {
-    .container {
-        width: 90%;
+    html {
+        font-size: 14px; /* تصغير الحجم الافتراضي للخطوط */
     }
-    .miqat{
+    .container {
+        width: 85%; /* تقليل العرض عشان يتناسب مع الشاشات الصغيرة */
+        padding: 20px 15px; /* تقليل البادينج */
+    }
+    .justify {
+        padding: 0 20%;
+        font-size: 18px; /* تقليل حجم الخط على الشاشات الصغيرة */
+    }
+    .miqat {
         gap: 5px;
         font-size: 18px;
         justify-content: space-between;
     }
+    .tarikh {
+        flex-direction: column; /* لتناسب الشاشة الصغيرة */
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .container {
-        width: 95%;
+    html {
+        font-size: 12px; /* تقليل الحجم أكثر على الشاشات الصغيرة جداً */
     }
-    .miqat{
+    .container {
+        width: 90%;
+        padding: 15px 10px; /* تقليل البادينج */
+    }
+    .justify {
+        padding: 0 10%;
+        font-size: 16px; /* تقليل حجم الخط أكثر */
+    }
+    .miqat {
         gap: 2px;
         font-size: 12px;
         justify-content: space-between;
+    }
+    .tarikh {
+        flex-direction: column; /* تغيير الاتجاه ليكون عمودي */
     }
 }
