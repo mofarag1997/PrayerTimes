@@ -9,7 +9,7 @@
 }
 html {
     direction: rtl;
-    font-size: 16px;
+    font-size: 16px; /* الحجم الافتراضي للخطوط */
 }
 
 body {
@@ -27,8 +27,9 @@ body {
     backdrop-filter: blur(10px);
     border: 1px solid #d7d7d74e;
     border-radius: 10px;
-    margin-left: 25%;
-    max-width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
 
 .justify {
@@ -42,11 +43,15 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .milady, .hijry, .countdown {
     font-size: 22px;
     color: white;
     gap: 5px;
+    width: 100%;
+    text-align: center; /* يجعلهم في منتصف العنصر */
 }
 .miqat {
     display: flex;
@@ -54,6 +59,7 @@ body {
     font-size: 25px;
     color: white;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .alazkar {
     color: white;
@@ -61,31 +67,44 @@ body {
     font-size: 25px;
 }
 
+select {
+    font-size: 18px; /* تكبير حجم الخط في السيليكت */
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
     html {
-        font-size: 14px; 
+        font-size: 14px;
     }
     .container {
+        width: 85%;
         padding: 20px 15px;
     }
     .justify {
         padding: 0 20%;
-        font-size: 18px; 
+        font-size: 18px;
     }
     .miqat {
-        gap: 5px;
+        gap: 8px;
         font-size: 18px;
         justify-content: space-between;
     }
     .tarikh {
-        flex-direction: column; 
-        font-size:20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px; /* زيادة الفراغ بين عناصر التاريخ */
+    }
+    .milady, .hijry, .countdown {
+        font-size: 18px; /* تقليل حجم الخط */
     }
 }
 
 @media screen and (max-width: 480px) {
     html {
-        font-size: 12px; 
+        font-size: 12px;
     }
     .container {
         width: 90%;
@@ -93,15 +112,19 @@ body {
     }
     .justify {
         padding: 0 10%;
-        font-size: 16px; 
+        font-size: 16px;
     }
     .miqat {
-        gap: 2px;
-        font-size: 12px;
+        gap: 5px;
+        font-size: 14px;
         justify-content: space-between;
     }
     .tarikh {
-        flex-direction: column; 
-        font-size:20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    .milady, .hijry, .countdown {
+        font-size: 14px; /* تقليل الحجم أكتر */
     }
 }
