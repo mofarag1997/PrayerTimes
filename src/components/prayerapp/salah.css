@@ -9,7 +9,7 @@
 }
 html {
     direction: rtl;
-    font-size: 16px; /* ضبط الحجم الافتراضي لسهولة القراءة على الموبايل */
+    font-size: 16px;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
     border: 1px solid #d7d7d74e;
     border-radius: 10px;
     margin-left: 25%;
-    max-width: 100%; /* يضمن أن العرض لا يتجاوز الحدود */
+    max-width: 100%; 
 }
 
 .justify {
@@ -63,15 +63,14 @@ body {
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 14px; /* تصغير الحجم الافتراضي للخطوط */
+        font-size: 14px; 
     }
     .container {
-        width: 85%; /* تقليل العرض عشان يتناسب مع الشاشات الصغيرة */
-        padding: 20px 15px; /* تقليل البادينج */
+        padding: 20px 15px;
     }
     .justify {
         padding: 0 20%;
-        font-size: 18px; /* تقليل حجم الخط على الشاشات الصغيرة */
+        font-size: 18px; 
     }
     .miqat {
         gap: 5px;
@@ -79,21 +78,22 @@ body {
         justify-content: space-between;
     }
     .tarikh {
-        flex-direction: column; /* لتناسب الشاشة الصغيرة */
+        flex-direction: column; 
+        font-size:20px;
     }
 }
 
 @media screen and (max-width: 480px) {
     html {
-        font-size: 12px; /* تقليل الحجم أكثر على الشاشات الصغيرة جداً */
+        font-size: 12px; 
     }
     .container {
         width: 90%;
-        padding: 15px 10px; /* تقليل البادينج */
+        padding: 15px 10px;
     }
     .justify {
         padding: 0 10%;
-        font-size: 16px; /* تقليل حجم الخط أكثر */
+        font-size: 16px; 
     }
     .miqat {
         gap: 2px;
@@ -101,6 +101,7 @@ body {
         justify-content: space-between;
     }
     .tarikh {
-        flex-direction: column; /* تغيير الاتجاه ليكون عمودي */
+        flex-direction: column; 
+        font-size:20px;
     }
 }
