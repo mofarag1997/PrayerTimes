@@ -11,7 +11,6 @@ const Salah = () => {
   const [date,setDate]=useState("")
   const [hijri,setHijri]=useState("")
   const [countdown, setCountdown] = useState("")
-  const azanAudio = new Audio("/assets/azan.mp3")
 
   useEffect(()=>{
     axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${city}&country=egypt&method=8`)
@@ -60,9 +59,6 @@ const Salah = () => {
 
       if (nextPrayer) {
         const remaining = nextPrayer.date - now
-        if (remaining <= 60000 && remaining >= 0) {
-          azanAudio.play().catch(()=>{})
-        }
         const h = Math.floor(remaining / 3600000)
         const m = Math.floor((remaining % 3600000) / 60000)
         const s = Math.floor((remaining % 60000) / 1000)
